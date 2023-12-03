@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Youtube clone</title>
+</head>
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/logo.webp" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="searchbox flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+            <img src="images/voice-search.png" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png">
+            <img src="images/more.png">
+            <img src="images/notification.png">
+            <img src="images/Jack.png" class="user-icon">
+        </div>
+    </nav>
+
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+                <video controls autoplay>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="rightside-bar">
+                <div class="sidevideo-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail1.png"></a>
+                    <div class="vid-info">
+                        <a href="">Best channel for Current Affairs for better options</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
