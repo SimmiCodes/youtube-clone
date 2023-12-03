@@ -1,206 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Youtube Clone</title>
 
+    <link rel="stylesheet" href="style.css">
+
+</head>
 <body>
-    <nav class="flex-div">
-        <div class="nav-left flex-div">
-            <img src="images/menu.png" class="menu-icon">
-            <img src="images/logo.webp" class="logo">
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="nav-middle flex-div">
-            <div class="searchbox flex-div">
-                <input type="text" placeholder="Search">
-                <img src="images/search.png">
+        <img src="images/logo.webp" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="images/search.png" alt=""></button>
+            <img src="images/voice-search.png" alt="" class="mic">
+        </div>
+        <div class="user-options">
+            <img src="images/history.png" class="icon" id="creat" alt="">
+            <img src="images/playlist.png" class="icon" alt="">
+            <img src="images/more.png" class="icon" alt="">
+            <div class="user-dp">
+                <img src="images/gerard.png" alt="">
             </div>
-            <img src="images/voice-search.png" class="mic-icon">
-        </div>
-        <div class="nav-right flex-div">
-            <img src="images/upload.png">
-            <img src="images/more.png">
-            <img src="images/notification.png">
-            <img src="images/Jack.png" class="user-icon">
         </div>
     </nav>
 
-
-
-    <!-- Side bar -->
-    <div class="Sidebar">
-        <div class="shortcut-links">
-            <a href="">
-                <img src="images/home.png">
-                <p>Home</p>
-            </a>
-            <a href="">
-                <img src="images/explore.png">
-                <p>Explore</p>
-            </a>
-            <a href="">
-                <img src="images/subscriprion.png">
-                <p>Subcription</p>
-            </a>
-            <a href="">
-                <img src="images/library.png">
-                <p>Library</p>
-            </a>
-            <a href="">
-                <img src="images/history.png">
-                <p>History</p>
-            </a>
-            <a href="">
-                <img src="images/playlist.png">
-                <p>Playlist</p>
-            </a>
-            <a href="">
-                <img src="images/messages.png">
-                <p>Messages</p>
-            </a>
-            <a href="">
-                <img src="images/show-more.png">
-                <p>Show More</p>
-            </a>
-            <hr>
-        </div>
-        <div class="subscribelist">
-            <h3>subscribed</h3>
-            <a href="">
-                <img src="images/Jack.png">
-                <p>Jack Nicoles</p>
-            </a>
-            <a href="">
-                <img src="images/simon.png">
-                <p>John Nike</p>
-            </a>
-            <a href="">
-                <img src="images/tom.png">
-                <p>jake Geoge</p>
-            </a>
-            <a href="">
-                <img src="images/megan.png">
-                <p>Sophie Nicoles</p>
-            </a>
-            <a href="">
-                <img src="images/cameron.png">
-                <p>Achie Nicoles</p>
-            </a>
-        </div>
+    <!-- Side-bar -->
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="images/home.png" alt="">home</a>
+        <a href="#" class="links"><img src="images/explore.png" alt="">explore</a>
+        <a href="#" class="links"><img src="images/subscriprion.png" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="images/library.png" alt="">library</a>
+        <a href="#" class="links"><img src="images/history.png" alt="">history</a>
+        <a href="#" class="links"><img src="images/cast.png" alt="">your video</a>
+        <a href="#" class="links"><img src="images/playlist.png" alt="">watch later</a>
+        <a href="#" class="links"><img src="images/like.png" alt="">like video</a>
+        <a href="#" class="links"><img src="images/show-more.png" alt="">show more</a>
     </div>
 
-
-    <!-- main -->
-    <div class="container">
-        <div class="banner">
-            <img src="images/banner.png">
-        </div>
-        <div class="list-container">
-            <div class="vid-list">
-                <a href="playvideo.html"><img src="images/thumbnail1.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="playvideo.html">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail2.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail3.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail4.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail5.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail6.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail7.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="vid-list">
-                <a href=""><img src="images/thumbnail8.png"  class="thumbnail"></a>
-                
-                <div class="flex-div">
-                    <img src="images/Jack.png">
-                    <div class="vid-info">
-                        <a href="">Best Channel to learn Coading that can make you Web developer</a>
-                        <p>Sac Tutorials</p>
-                        <p>15k views &bull; 2 days</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- All the filter presnt here -->
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
     </div>
 
+    <!-- Video displayer for the front page -->
+    <div class="video-container">
+       
+    </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 </body>
-
 </html>
