@@ -7,16 +7,14 @@
 *:focus{
     outline: none;
 }
-
 body{
     position: relative;
     background: #f0f0f0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto',sans-serif;
 }
-
 .navbar{
     position: fixed;
-    top: 0;
+    top:0;
     left: 0;
     width: 100%;
     height: 60px;
@@ -37,8 +35,8 @@ body{
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 50%;
-    transform: translateY(-50%);
+    top:50%;
+    transform: translate(-50%);
     background: #979797;
 }
 
@@ -47,21 +45,12 @@ body{
 }
 
 .toggle-btn span:nth-child(3){
-    top: 100%;
+    top:100%;
 }
 
-.mic{
-    width: 15px;
-    height: 20px;
-    margin-top: 8px;
-    margin-left: 10px;
-}
 .logo{
-    
-    align-items:center;
-    
+    height: 30px;
     margin: -10px 30px 0;
-    margin-top : 0px;
 }
 
 .search-box{
@@ -70,34 +59,29 @@ body{
     width: 50%;
     height: 35px;
     display: flex;
-    margin-left: 220px;
-
 }
 
 .search-bar{
     width: 85%;
     height: 100%;
-    border: 2px solid #dbdbdb;
+    border:2px solid #dbdbdb;
     padding: 0 20px;
     font-size: 16px;
     text-transform: capitalize;
-}
-.logo{
-    width: 80px;
-    height: auto;
 }
 
 .search-btn{
     width: 15%;
     height: 100%;
-    background: white;
+    background: #f0f0f0;
     border: 2px solid #dbdbdb;
     padding: 5px 0;
-    border-left: none;
+    border-left:none ;
 }
 
 .search-btn img{
     height: 100%;
+
 }
 
 .user-options{
@@ -106,19 +90,16 @@ body{
     margin-left: auto;
     align-items: center;
 }
-#creat{
-    width: 40px;
-    height: 40px;
-}
 
 .user-options .icon{
     height: 80%;
     margin-right: 20px;
     cursor: pointer;
+
 }
 
 .user-dp{
-    cursor: pointer;
+    cursor:pointer;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -131,15 +112,15 @@ body{
     object-fit: cover;
 }
 
-/*  side-bar of it */
 
+/* sidebar */
 .side-bar{
-    position: fixed;
+    position: fixed ;
     top: 60px;
     left: 0;
     min-width: 250px;
     width: 250px;
-    height: calc(100vh - 60px);
+    height:100%;
     background:#fff;
     padding-right: 10px;
 }
@@ -151,37 +132,39 @@ body{
     display: flex;
     align-items: center;
     text-transform: capitalize;
-    color: black;
+    color: #242424;
     font-size: 14px;
-    font-weight: 500;
     text-decoration: none;
+    font-weight: 500;
+
 }
 
 .links img{
     height: 25px;
-    margin-right: 20px;
+    margin-right:20px ;
 }
 
 .links:hover,
-.links.active{
-    background: rgba(0, 0, 0, 0.1);
+.links:active{
+    background: rgb(247, 240, 240);
 }
 
-.seperator{
+.seprator{
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0,0.1)  ;
     margin: 20px 0;
+
 }
 
-/*Filter part */
+/* filter */
 
-.filters{
+.filter{
     position: fixed;
     left: 250px;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - -250px);
     height: 60px;
-    background: #fff;
+    background:#fff;
     border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
     padding: 0 20px;
@@ -190,8 +173,7 @@ body{
     overflow-x: auto;
     overflow-y: hidden;
 }
-
-.filters::-webkit-scrollbar{
+.filter::-webkit-scrollbar{
     display: none;
 }
 
@@ -200,41 +182,45 @@ body{
     padding: 10px 20px;
     border-radius: 50px;
     background: #f0f0f0;
-    border: 1px solid #dbdbdb;
-    text-transform: capitalize;
+    border:1px solid #dbdbdb ;
     margin-right: 10px;
     color: #242424;
     font-size: 15px;
     cursor: pointer;
 }
-
 .filter-options.active{
     color: #fff;
     background: #242424;
 }
 
+/* video */
 
 .video-container{
     width: calc(100% - 250px);
-    margin-top: 120px;
-    margin-left: 250px;
+    margin-top:120px;
+    margin-left:250px ;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: 20px 5px;
+    grid-template-columns:repeat(4,25%);
+    grid-gap:20px 10px;
     overflow-x: hidden;
+
 }
 
 .video{
     min-height: 250px;
     height: auto;
-}
+   
 
+}
 .thumbnail{
     width: 100%;
-    height: 150px;
+    height: 170px;
     object-fit: cover;
+    border-radius: 10px;
 }
+
+
 
 .content{
     width: 100%;
@@ -253,13 +239,14 @@ body{
 }
 
 .title{
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
+    width:100%;
+    height: fit-content;
+    font-size: small;
+    text-align:start;
 }
 
 .channel-name{
     font-size: 14px;
-    margin: 2px 0;
+    margin:2px 0 ;
     color: #979797;
 }
